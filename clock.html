@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: linear-gradient(rgb(145, 170, 207), rgb(145, 170, 207));
+            --fg: #17181c;
+            --primary1: #255ff4;
+            --primary2: #5583f6;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: var(--bg);
+        }
+
+        .clock {
+            width: 10%;
+            height: 10%;
+            /* 利用flex布局，将时针，分针，秒针定位到钟的水平垂直居中的位置 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%
+        }
+
+        /* 利用伪元素在钟的中心添加一个点 */
+        .clock:before {
+            content: ''
+        }
+
+        .clock:after {
+            content: ''
+        }
+
+        .clock .hour,
+        .clock .min,
+        .clock .sec {
+            position: absolute;
+        }
+
+        .clock .hour,
+        .hr {
+            width: 160px;
+            height: 160px;
+        }
+
+        .clock .min,
+        .mn {
+            width: 190px;
+            height: 190px;
+        }
+
+        .clock .sec,
+        .sc {
+            width: 230px;
+            height: 230px;
+        }
+
+        .hr,
+        .mn,
+        .sc {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .hr:before {
+            content: ''
+        }
+
+        .mn:before {
+            content: ''
+        }
+
+        .sc:before {
+            content: ''
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+    <script>
+        const deg = 6;
+        const hr = document.querySelector('#hr');
+        const mn = document.querySelector('#mn');
+        const sc = document.querySelector('#sc');
+        // 设置定时器，每秒执行一次
+        setInterval(() => {
+            let day = new Date();
+            // 求一小时，一分钟，一秒的角度，一共360度
+            let h = day.getHours() * 30; // 一小时等于30度
+            let m = day.getMinutes() * deg; // 一分钟等于6度
+            let s = day.getSeconds() * deg; // 一秒等于6度
+            hr.style.transform = `rotateZ(${h + m / 12}deg)`;
+            mn.style.transform = `rotateZ(${m}deg)`;
+            sc.style.transform = `rotateZ(${s}deg)`;
+        }, 1000)
+    </script>
+</body>
+
+</html>

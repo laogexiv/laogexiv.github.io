@@ -1,0 +1,210 @@
+body {
+    background: linear-gradient(to right, #FFC0CB, #ADD8E6);
+}
+
+.all {
+    width: 80%;
+    height: 80%;
+    /* 您可以根据需要更改这个值 */
+    /* 您也可以根据需要更改这个值 */
+    /* 您可以更改背景颜色 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.5s ease;
+}
+
+.all-1 {
+    width: 39%;
+    height: 49%;
+    border-radius: 15px;
+    /* 您可以根据需要更改这个值 */
+    padding: 0px;
+    /* 您也可以根据需要更改这个值 */
+    background-color: rgb(255, 255, 255);
+    /* 您可以更改背景颜色 */
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    transition: background-color 0.5s ease;
+    transition: top 0.5s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.all-1:hover {
+    background-color: #d5d5d5;
+    top: 24%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.all-2 {
+    width: 59%;
+    height: 49%;
+    border-radius: 15px;
+    /* 您可以根据需要更改这个值 */
+    padding: 0px;
+    /* 您也可以根据需要更改这个值 */
+    background-color: rgb(255, 255, 255);
+    /* 您可以更改背景颜色 */
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    transition: background-color 0.5s ease;
+    transition: top 0.5s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.all-2:hover {
+    background-color: #d5d5d5;
+    top: 24%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.all-3 {
+    width: 59%;
+    height: 49%;
+    border-radius: 15px;
+    /* 您可以根据需要更改这个值 */
+    padding: 0px;
+    /* 您也可以根据需要更改这个值 */
+    background-color: rgb(255, 255, 255);
+    /* 您可以更改背景颜色 */
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    transition: top 0.5s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.all-3:hover {
+    top: 74%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.all-4 {
+    width: 19%;
+    height: 49%;
+    border-radius: 15px;
+    /* 您可以根据需要更改这个值 */
+    padding: 0px;
+    /* 您也可以根据需要更改这个值 */
+    background-color: rgb(255, 255, 255);
+    /* 您可以更改背景颜色 */
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    transition: background-color 0.5s ease;
+    transition: top 0.5s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.all-4:hover {
+    background-color: #d5d5d5;
+    top: 74%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.all-5 {
+    width: 19%;
+    height: 49%;
+    border-radius: 15px;
+    /* 您可以根据需要更改这个值 */
+    padding: 0px;
+    /* 您也可以根据需要更改这个值 */
+    background-color: rgb(255, 255, 255);
+    /* 您可以更改背景颜色 */
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    transition: background-color 0.5s ease;
+    transition: top 0.5s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.all-5:hover {
+    background-color: #d5d5d5;
+    top: 74%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 2/20日，这是一个值得纪念的日子，老子终于把几大板块做出来了 */
+/* 本身想把三连解压按钮先做了，不巧手机被宿管老师收了555 */
+/* 我决定开始制作第二板块，按钮导航 */
+/* 最开始本身想做第一板块的，可惜太难了，先做第一板块吧 */
+/* 对于我这样的初学者js这种东西开始必须要有chatgpt的 */
+/* 想想计划，先做导航栏初期格式，再去搞三连解压按钮，然后是音乐播放器，最后做一个时钟及问候语 */
+/* 最后一个功能还没想好555，实在不知道做什么不如就和音乐播放器合并吧，做个大点的 */
+/* 万事皆有可能，还是先做好眼下的事吧 */
+/* 导航栏初期，启动！！！（难以置信，我已经写了大于100行代码了，难得啊） */
+.map {
+    /* 妈啊，突然愣住了，还是做三个按钮吧，学习笔记我记得有东西，走，看看去 */
+    /* align-; */
+    /* 无语了，aligh没写，确切的来说我不知道怎么用 */
+    /* 老老实实写位置吧qwq */
+    /* 老天保佑，这玩意可以玩叠加 */
+    /* 先来写长宽高 */
+    max-width: 100%;
+    height: auto;
+    /* 先这样试试 */
+    /* 去html写div，看我传送#0001 */
+    /* #0002 */
+    /* 感觉好像老把他往上抬不好看，改成减大小？ */
+    /* 保持现状是最正确的决定，先不改呢 */
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+.all-5:hover {
+    max-width: 120%;
+}
+
+.map-1 {
+    width: 15%;
+    top: 20%;
+    left: 3%;
+    position: absolute;
+}
+
+.ma:hover {
+    height: 60%;
+    width: 20%;
+}
+
+/* 导入阿里的图标 */
+/* 网上抄的代码，为了适配还是要自己看 */
+/* 555要自己看 */
+/* 我是傻* */
+/* 直接把代码抄一下搓哥嵌套不香么 */
+.all-3-1 {
+    width: 97%;
+    height: 97%;
+    border: 0;
+    box-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    left: 50%;
+}
+
+.clock {
+    border-radius: 114514px;
+    background: rgb(0, 0, 0);
+    max-width: 50%;
+    height: auto;
+}
+
+.data {
+    left: 50%;
+}

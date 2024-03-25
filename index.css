@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 白色主题 */
+:root {
+    --bg-color: #ffffff;
+    --icon-color: #c5c5c5;
+    --icon-chose-color: #49a5fc;
+    --icon-light-color: #fff;
+    --icon-dark-color: #a3a2a3;
+    transition: background-color 0.5s ease;
+}
+:root:hover {
+    background-color: #d5d5d5;
+}
+
+/* 黑色主题，使用时把上面的白色主题注释掉，启用下面的css代码 */
+/* :root {
+    --bg-color: #202020;
+    --icon-color: #3b3b3b;
+    --icon-chose-color: #a649d1;
+    --icon-light-color: #424242;
+    --icon-dark-color: #000000;
+} */
+
+/* 导入阿里的图标 */
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.ttf') format('truetype');
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-size: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-checkbox {
+    display: none;
+}
+
+.icon {
+    flex: none;
+    display: flex;
+    background-color: var(--bg-color);
+    width: 10rem;
+    height: 10rem;
+    margin: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 30px var(--icon-dark-color),
+        -5px -5px 30px var(--icon-light-color),
+        0px 0px 0px 20px var(--bg-color) inset,
+        -10px -10px 30px var(--icon-light-color) inset,
+        10px 10px 30px var(--icon-dark-color) inset;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon-checkbox:checked+.icon {
+    box-shadow: 5px 5px 30px var(--icon-dark-color),
+        -5px -5px 30px var(--icon-light-color),
+        0px 0px 0px 20px var(--bg-color) inset,
+        10px 10px 30px var(--icon-light-color) inset,
+        -10px -10px 30px var(--icon-dark-color) inset;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 900;
+    color: var(--icon-color);
+    transition: all 0.1s 0.3s;
+}
+
+.icon-checkbox:checked+.icon>.iconfont {
+    color: var(--icon-chose-color);
+    text-shadow: 0px 0px 10px var(--icon-chose-color);
+}
